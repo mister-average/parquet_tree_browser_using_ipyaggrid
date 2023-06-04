@@ -14869,38 +14869,6 @@ if (!requirejs.specified('base/js/namespace')) {
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_head_200_stage_1_partitioned_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_1_partitioned_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_1_partitioned_parquet_output_blocksize_1_000_000&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_1_partitioned_parquet_output_blocksize_10_000_000&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_1_partitioned_parquet_output.test&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_2_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_2_parquet_output_before_removing_empty_files&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_2_parquet_output_manually_removing_empty_files&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_2_parquet_output.only_using_first_char_a&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/nbdime_tree_diff&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sdd1_the_one_farther.find_ls_stage_1_partitioned_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sdd1_the_one_farther.find_ls_stage_2_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.find_ls_stage_1_partitioned_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.find_ls_stage_2_parquet_output&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only_full_details&quot;</span><span class="p">))</span>
-    <span class="n">list_of_walked_hive_partitioned_trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s2">&quot;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only_merge&quot;</span><span class="p">))</span>
-    <span class="c1">#list_of_walked_hive_partitioned_trees</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15095,11 +15063,6 @@ if (!requirejs.specified('base/js/namespace')) {
 
     
     
-<span class="c1">#     convert_column_to_nested(df, &#39;partition_columns&#39;)    </span>
-<span class="c1">#     convert_column_to_nested(df, &#39;columns&#39;)</span>
-<span class="c1">#     convert_column_to_nested(df, &#39;partition_ranges&#39;)    </span>
-<span class="c1">#     convert_column_to_nested(df, &#39;ranges&#39;)</span>
-    
     <span class="n">progress_iterator_0</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">([</span><span class="s1">&#39;partition_columns&#39;</span><span class="p">,</span> <span class="s1">&#39;columns&#39;</span><span class="p">,</span> <span class="s1">&#39;partition_ranges&#39;</span><span class="p">,</span> <span class="s1">&#39;ranges&#39;</span><span class="p">],</span> <span class="n">leave</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">nested_column_name</span> <span class="ow">in</span> <span class="n">progress_iterator_0</span><span class="p">:</span>
         <span class="n">progress_iterator_0</span><span class="o">.</span><span class="n">set_description</span><span class="p">(</span><span class="s1">&#39;Initial unnesting for column &#39;</span> <span class="o">+</span> <span class="n">nested_column_name</span><span class="p">)</span>
@@ -15279,14 +15242,11 @@ if (!requirejs.specified('base/js/namespace')) {
     <span class="k">return</span> <span class="n">aggrid_rows</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-<span class="c1">#     demo_root = demo_hive_tree_path_list[0]</span>
-<span class="c1">#     demo_df = os_walk_hive_partitioned_parquet_tree(demo_root, debug=False)</span>
+    <span class="n">demo_root</span> <span class="o">=</span> <span class="n">demo_hive_tree_path_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">demo_df</span> <span class="o">=</span> <span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="n">demo_root</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     
-<span class="c1">#     demo_aggrid_rows = generate_aggrid_rows_for_a_hive_partition_tree_df(demo_df)</span>
-<span class="c1">#     pprint(demo_aggrid_rows)</span>
-
-    <span class="n">the_df</span> <span class="o">=</span> <span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/external_disks_passports.find_ls_stage_1_partitioned_parquet_output&#39;</span><span class="p">)</span>
-    <span class="n">aggrid_rows</span> <span class="o">=</span> <span class="n">generate_aggrid_rows_for_a_hive_partition_tree_df</span><span class="p">(</span><span class="n">the_df</span><span class="p">)</span>
+    <span class="n">demo_aggrid_rows</span> <span class="o">=</span> <span class="n">generate_aggrid_rows_for_a_hive_partition_tree_df</span><span class="p">(</span><span class="n">demo_df</span><span class="p">)</span>
+    <span class="n">pprint</span><span class="p">(</span><span class="n">demo_aggrid_rows</span><span class="p">)</span>
 </pre></div>
 
     </div>
