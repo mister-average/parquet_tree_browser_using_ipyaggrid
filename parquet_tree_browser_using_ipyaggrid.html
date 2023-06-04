@@ -14811,11 +14811,11 @@ if (!requirejs.specified('base/js/namespace')) {
     <span class="k">return</span> <span class="n">ret_val_df</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">demo_root</span> <span class="o">=</span> <span class="s2">&quot;/home/jovyan/notebooks/utilities/data/test/hive_tree_1&quot;</span>
+    <span class="n">demo_root</span> <span class="o">=</span> <span class="s2">&quot;/var/tmp/fake_hive_trees/hive_tree_1&quot;</span>
     <span class="n">demo_root</span> <span class="o">=</span> <span class="n">demo_hive_tree_path_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">demo_df</span> <span class="o">=</span> <span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="n">demo_root</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     
-    <span class="n">demo_root2</span> <span class="o">=</span> <span class="s2">&quot;/home/jovyan/notebooks/utilities/data/test/hive_tree_1a&quot;</span>
+    <span class="n">demo_root2</span> <span class="o">=</span> <span class="s2">&quot;/var/tmp/fake_hive_trees/hive_tree_1a&quot;</span>
     <span class="n">demo_root2</span> <span class="o">=</span> <span class="n">demo_hive_tree_path_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">demo_df2</span> <span class="o">=</span> <span class="n">os_walk_hive_partitioned_parquet_tree</span><span class="p">(</span><span class="n">demo_root2</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">display</span><span class="p">(</span><span class="n">demo_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
@@ -15585,14 +15585,6 @@ if (!requirejs.specified('base/js/namespace')) {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">tgw</span> <span class="o">=</span> <span class="n">twin_grid_widget</span><span class="p">()</span>
     <span class="n">display</span><span class="p">(</span><span class="n">tgw</span><span class="p">)</span>
-    
-    <span class="n">real_path_list</span> <span class="o">=</span> <span class="p">[</span>
-                       <span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/sdd1_the_one_farther.find_ls_stage_2_parquet_output&#39;</span><span class="p">,</span> 
-                       <span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.find_ls_stage_2_parquet_output&#39;</span><span class="p">,</span> 
-                       <span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only&#39;</span><span class="p">,</span> 
-                       <span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only_full_details&#39;</span><span class="p">,</span> 
-                       <span class="s1">&#39;/home/jovyan/notebooks/data/filesystem_inventory/sde1_the_one_closer.only_merge&#39;</span>
-    <span class="p">]</span>
     
     <span class="n">fake_path_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;/var/tmp/fake_hive_trees/hive_tree_1&#39;</span><span class="p">,</span>
                       <span class="s1">&#39;/var/tmp/fake_hive_trees/hive_tree_1a&#39;</span><span class="p">,</span>
